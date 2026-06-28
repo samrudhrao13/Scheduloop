@@ -1,0 +1,274 @@
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #07080c;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #667eea;
+    font-size: 22px;
+    margin: 0;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.event-item:hover {
+    background: #e9ecef;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-item h4 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.event-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.event-item p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.event-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #666;
+}
+
+.event-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.event-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-item-info h4 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.user-item-info p {
+    color: #666;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+.room-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.room-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 4px solid #667eea;
+}
+
+.room-card h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.room-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.room-card-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.feedback-stars {
+    display: flex;
+    gap: 5px;
+    font-size: 32px;
+    cursor: pointer;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.feedback-stars span {
+    color: #ddd;
+    transition: color 0.2s ease;
+}
+
+.feedback-stars span:hover,
+.feedback-stars span.active {
+    color: #ffc107;
+}
+
+.feedback-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.feedback-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feedback-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    color: #ffc107;
+}
+
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedback-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #667eea;
+}
+
+.feedback-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feedback-item-rating {
+    color: #ffc107;
+    font-size: 16px;
+}
+
+.feedback-item-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.feedback-item-comment {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.attendance-status {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.attendance-present {
+    background: #28a745;
+}
+
+.attendance-absent {
+    background: #dc3545;
+}
+
+.attendance-table {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+}
